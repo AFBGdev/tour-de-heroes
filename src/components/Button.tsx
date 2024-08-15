@@ -1,0 +1,19 @@
+import { type PropsWithChildren } from 'react'
+
+interface ButtonProps extends PropsWithChildren {
+  onClick?: () => void
+}
+
+function Button({ children, onClick }: ButtonProps) {
+
+  return (
+    <button
+      className='rounded bg-sky-600 py-2 px-4 text-sm text-white data-[hover]:bg-sky-500 data-[active]:bg-sky-700'
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  )
+}
+
+export default Button
