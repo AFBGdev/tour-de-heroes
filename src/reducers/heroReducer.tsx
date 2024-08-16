@@ -8,7 +8,11 @@ export function heroReducer(state: AppStateType, action: HeroActionType) {
       const savedHeroes = localStorage.getItem('heroes');
 
       if (!savedHeroes) {
+<<<<<<< HEAD
         return {...state, heroes: []}
+=======
+        return []
+>>>>>>> 892de253a586010ff3d581cea74655799cd0c317
       }
 
       return {
